@@ -39,3 +39,44 @@
 [info] i  hosting: Serving hosting files from: ./
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2018-03-19T11:11:36.179Z] ----------------------------------------------------------------------
+[debug] [2018-03-19T11:11:36.184Z] Command:       /home/willardpc/.nvm/versions/node/v8.9.4/bin/node /home/willardpc/.nvm/versions/node/v8.9.4/bin/firebase serve
+[debug] [2018-03-19T11:11:36.184Z] CLI Version:   3.17.6
+[debug] [2018-03-19T11:11:36.184Z] Platform:      linux
+[debug] [2018-03-19T11:11:36.184Z] Node Version:  v8.9.4
+[debug] [2018-03-19T11:11:36.185Z] Time:          Mon Mar 19 2018 14:11:36 GMT+0300 (EAT)
+[debug] [2018-03-19T11:11:36.185Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-19T11:11:36.249Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-19T11:11:36.249Z] > authorizing via signed-in user
+[debug] [2018-03-19T11:11:36.252Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-19T11:11:36.253Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/SVFoGQVXY59_FMbkmX_Bo-HOWHuzuwK7LY6CqNL7dP0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Mar 19 2018 14:11:36 GMT+0300 (EAT)
+[debug] [2018-03-19T11:11:37.918Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-19T11:11:37.998Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-authdemo-fa506  
+  
+ Mon Mar 19 2018 14:11:37 GMT+0300 (EAT)
+[debug] [2018-03-19T11:11:43.739Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-19T11:11:43.741Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-authdemo-fa506/tokens  
+  
+ Mon Mar 19 2018 14:11:43 GMT+0300 (EAT)
+[debug] [2018-03-19T11:11:45.004Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-19T11:11:45.006Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-authdemo-fa506  
+  
+ Mon Mar 19 2018 14:11:45 GMT+0300 (EAT)
+[debug] [2018-03-19T11:11:48.943Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/willardpc/Documents/Projects/firebase-web/public'...
+[info] 
+[debug] [2018-03-19T11:11:48.949Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/315482057896/clients/_:getWebAppConfig  
+  
+ Mon Mar 19 2018 14:11:48 GMT+0300 (EAT)
+[debug] [2018-03-19T11:11:52.750Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
+

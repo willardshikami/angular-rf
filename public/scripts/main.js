@@ -128,9 +128,25 @@ FriendlyChat.prototype.saveImageMessage = function(event) {
   }
   // Check if the user is signed-in
   if (this.checkSignedInWithMessage()) {
+    //Upload image to Firebase storage and add message.
+    var currentUser = this.auth.currentUser;
+    this.messageRef.push({
+      name: currentUser.displayName,
+      imageUrl: FriendlyChat.LOADING_IMAGE_URL,
+      photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
+    }).then(function(data){
+      
+      //Upload the image to cloud storage
+      var filePath = currentUser.uid + '/' + data.key + '/' + file.name;
+      return this.storage.ref(filePath).put(file).then(function(snapshot){
 
-    // TODO(DEVELOPER): Upload image to Firebase storage and add message.
-
+        //Get the file's storage URI and update the chat message placeholder
+        var fullPath = snapshot.metadata.fullPath;
+        return data.update({imageUrl: this.storage.ref(fullPath).toString()});
+      }.bind(this));
+    }.bind(this)).catch(function(error){
+      console.error('There was an error uploading a file to Cloud Storage:', error)
+    });
   }
 };
 
