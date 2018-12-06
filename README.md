@@ -1,2 +1,3 @@
-# firebase-web
-Using Firebase for Auth, DB and Hosting on the Web for a chat app
+## Angular Reactive Forms
+
+This Project is based on Angular Reactive Forms
